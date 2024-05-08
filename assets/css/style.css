@@ -440,7 +440,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .mobile-bottom-navigation {
   background: var(--white);
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -459,6 +459,10 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   font-size: 26px;
   color: var(--eerie-black);
   padding: 10px;
+}
+ .icon-menu {
+  height: 24px;
+  width: 24px;
 }
 
 .mobile-bottom-navigation .count {
