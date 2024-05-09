@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesibility</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/popup.png" alt="subscribe " width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <p class="newsletter-desc">
+              Get the latest <b>Shoply</b> products and discount update with us right to your email
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Free Shipping available for above $300 and above</b>
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+          <select name="language">
+            <option value="en-US">English</option>
+            <option value="sp">Spanish</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/logo.svg" alt="Shoply's logo" width="120" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+      <nav class="desktop-navigation-menu">
+
+        <div class="container">
+  
+          <ul class="desktop-menu-category-list">
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Home</a>
+            </li>
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Categories</a>
+  
+              <div class="dropdown-panel">
+  
+                <ul class="dropdown-panel-list">
+  
+                  <li class="menu-title">
+                    <a href="#">Electronics</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Desktop</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Laptop</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Camera</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Tablet</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">watch</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">
+                      <img src="./assets/images/watch.jpg" alt="watch collection" width="250"
+                        height="150">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <ul class="dropdown-panel-list">
+  
+                  <li class="menu-title">
+                    <a href="#">Men's</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Formal</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Casual</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Sports</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Jacket</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Sunglasses</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">
+                      <img src="./assets/images/men.png" alt="men's fashion" width="250" height="150">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <ul class="dropdown-panel-list">
+  
+                  <li class="menu-title">
+                    <a href="#">Women's</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Formal</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Casual</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Perfume</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Cosmetics</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Bags</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">
+                      <img src="./assets/images/women.jpg" alt="women" width="250" height="150">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <ul class="dropdown-panel-list">
+  
+                  <li class="menu-title">
+                    <a href="#">Electronics</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Smart Watch</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Smart TV</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Keyboard</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Camera</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">Microphone</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#">
+                      <img src="./assets/images/camera.jpg" alt="camera" width="250" height="150">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+              </div>
+            </li>
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Men's</a>
+  
+              <ul class="dropdown-list">
+  
+                <li class="dropdown-item">
+                  <a href="#">Shirt</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Shorts & Jeans</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Safety Shoes</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Wallet</a>
+                </li>
+  
+              </ul>
+            </li>
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Women's</a>
+  
+              <ul class="dropdown-list">
+  
+                <li class="dropdown-item">
+                  <a href="#">Dress & Frock</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Earrings</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Necklace</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Makeup Kit</a>
+                </li>
+  
+              </ul>
+            </li>
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Jewelry</a>
+  
+              <ul class="dropdown-list">
+  
+                <li class="dropdown-item">
+                  <a href="#">Earrings</a>
+                </li>
+                
+                <li class="dropdown-item">
+                  <a href="#">Couple Rings</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Necklace</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Bracelets</a>
+                </li>
+  
+              </ul>
+            </li>
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Perfume</a>
+  
+              <ul class="dropdown-list">
+  
+                <li class="dropdown-item">
+                  <a href="#">Clothes Perfume</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Deodorant</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Flower Fragrance</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Air Freshener</a>
+                </li>
+  
+              </ul>
+            </li>
+  
+            <li class="menu-category">
+              <a href="#" class="menu-title">Blog</a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </nav>
+    </div>
+
+  
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+      </button>
+
+      <button class="action-btn"> 
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        </button>
+
+      
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <svg xmlns="http://www.w3.org/2000/svg"  height="28px" viewBox="0 0 24 24"><path d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z" /></svg>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu Navigation</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Men's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shirt</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shorts & Jeans</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Safety Shoes</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Wallet</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Women's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Dress & Frock</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Makeup Kit</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Jewelry</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Couple Rings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Bracelets</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Perfume</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Clothes Perfume</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Deodorant</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Flower Fragrance</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Air Freshener</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+
+    
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Spanish</a>
+              </li>
+
+
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+  <main>
+    <div class="TermsContainer">
+      <h1>Terms and Conditions</h1>
+    
+      <h2>1. Introduction</h2>
+      <p>These Terms and Conditions govern your use of the shoply website and the purchase of products from our online store. By accessing or using our website, you agree to be bound by these Terms and Conditions.</p>
+  
+      <h2>2. Product Availability and Pricing</h2>
+      <p>All products displayed on our website are subject to availability. We reserve the right to discontinue any product at any time without notice. Prices for our products are subject to change without notice.</p>
+  
+      <h2>3. Ordering and Payment</h2>
+      <p>To place an order, you must provide accurate and complete information. You agree to pay all charges incurred by you or users of your account and credit card at the prices in effect when such charges are incurred. We accept various forms of payment, including credit/debit cards and PayPal.</p>
+  
+      <h2>4. Shipping and Delivery</h2>
+      <p>We will make every effort to deliver your order within the estimated timeframe. However, we are not responsible for delays beyond our control, including but not limited to shipping carrier delays, customs delays, and force majeure events.</p>
+  
+      <h2>5. Returns and Exchanges</h2>
+      <p>We accept returns and exchanges within [Specify Timeframe] of purchase, provided that the product is in its original condition with tags attached. Customers are responsible for return shipping costs unless the product is defective or the return is due to our error.</p>
+  
+      <h2>6. Intellectual Property</h2>
+      <p>All content on our website, including text, graphics, logos, images, and software, is the property of shoply or its licensors and is protected by copyright and other intellectual property laws.</p>
+  
+      <h2>7. Limitation of Liability</h2>
+      <p>In no event shall shoply, its directors, officers, employees, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of our website or the purchase of products.</p>
+  
+      <h2>8. Governing Law</h2>
+      <p>These Terms and Conditions shall be governed by and construed in accordance with the laws of [Your Country/State], without regard to its conflict of law provisions.</p>
+  
+      <h2>9. Changes to Terms and Conditions</h2>
+      <p>We reserve the right to modify or replace these Terms and Conditions at any time. Any changes will be effective immediately upon posting on our website. Your continued use of our website after any such changes constitutes your acceptance of the new Terms and Conditions.</p>
+  
+      <h2>10. Contact Us</h2>
+      <p>If you have any questions or concerns about these Terms and Conditions, please contact us at [Your Contact Information].</p>
+    </div>
+    
+</main>
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular</h2>
+          </li>
+
+      
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Electronic</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cosmetic</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cloths</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+    
+          <li class="footer-nav-item">
+            <a href="/terms.html" class="footer-nav-link">Terms and conditions</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Shoply</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="/accesibility.html" class="footer-nav-link">Accessibility</a>
+          </li>
+           
+          <li class="footer-nav-item">
+            <a href="/privacy.html" class="footer-nav-link">Privacy policy</a>
+          </li>
+        
+    
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+        
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Online payment</a>
+          </li>
+        
+    
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+       
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+             India, lan
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+123032282229" class="footer-nav-link">(123)032 282 229</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">shoply@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+  
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="copyright">
+      Copyright &copy; <a href="#">Shoply</a> 2024 all rights reserved.
+    </p>
+
+  </footer>
+
+  <div class="disclaimer">
+    Disclaimer: This website has been developed as part of a university assignment 2021
+  </div>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

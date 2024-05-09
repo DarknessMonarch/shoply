@@ -523,7 +523,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .desktop-navigation-menu { display: none; }
 
 .header-main {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   }
 
 .header-logo { margin-bottom: 20px; }
@@ -2047,17 +2047,10 @@ footer {
   text-transform: uppercase;
   margin-bottom: 15px;
   padding-bottom: 5px;
+  color: var(--salmon-pink);
 }
 
-.footer-nav .nav-title::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: var(--salmon-pink);
-  width: 60px;
-  height: 1px;
-}
+
 
 .footer-nav-item { padding: 3px 0; }
 
@@ -2136,6 +2129,7 @@ footer {
   font-weight: var(--weight-500);
   text-transform: capitalize;
   letter-spacing: 1.2px;
+  text-align: center;
 }
 
 .copyright a {
@@ -2144,7 +2138,37 @@ footer {
 }
 
 
+/* TermsContainer */
 
+.TermsContainer {
+  gap: 10px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.TermsContainer h1 {
+  font-size: var(--fs-4);
+  text-decoration: underline;
+  font-weight: var(--weight-500);
+
+}
+
+.TermsContainer  h2 {
+  font-size: var(--fs-6);
+  font-weight: var(--weight-500);
+
+}
+
+
+.TermsContainer p {
+  font-size: var(--fs-6);
+  font-weight: var(--weight-300);
+}
+
+.TermsContainer ul {
+  list-style: circle;
+}
 
 
 /*-----------------------------------*\
@@ -3170,7 +3194,16 @@ footer {
 }
 
 
+/* Disclaimer */
 
+.disclaimer {
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bittersweet);
+}
 
 
 /**
